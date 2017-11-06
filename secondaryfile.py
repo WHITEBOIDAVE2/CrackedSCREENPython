@@ -1,0 +1,36 @@
+import turtle
+turtle.colormode(255)
+from random import randint
+from myShape import *
+bob = turtle.Turtle()
+turtle.tracer(0)
+turtle.bgcolor("black")
+
+for times in range(73):
+    x = randint(0,0)
+    y = randint(0,0)
+    red = randint(0,255)
+    green = randint(0,255)
+    blue = randint(0,255)
+    w = randint(200,600)
+    bob.color(red,green,blue)
+    move(bob,-500,-360)
+    bob.forward(100)
+    bob.right(5)
+    polygon(bob,6000,1)
+    bob.width(".30")
+for times in range(3):
+    x = randint(0,0)
+    y = randint(0,0)
+    red = randint(0,255)
+    green = randint(0,255)
+    blue = randint(0,255)
+    w = randint(200,600)
+    move(bob,-600,-200)
+    bob.forward(10000) 
+    bob.right(-45)
+    bob.forward(1000) 
+    move(bob,0,-500)
+    bob.forward(10000) 
+    bob.right(-45)
+    bob.forward(1000) 
